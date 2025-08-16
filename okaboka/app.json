@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "okaboka",
+    "slug": "okaboka",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "okaboka",
+    "primaryColor": "#3DC4AB", 
+    "backgroundColor": "#3DC4AB",
+    "userInterfaceStyle": "light", 
+    "ios": {
+      "supportsTablet": true,
+      "backgroundColor": "#3DC4AB", 
+      "infoPlist": {
+        "UIUserInterfaceStyle": "Light"
+      }
+    },
+     "android": {
+
+               "splash": {
+                    "image": "./assets/images/logo.png",
+                    "resizeMode": "cover",
+                    "backgroundColor": "#3DC4AB",
+                    "dark": {
+                         "image": "./assets/images/logo.png",
+                         "resizeMode": "cover",
+                         "backgroundColor": "#3DC4AB"
+                    }
+               },
+      "package": "com.yourcompany.okaboka",
+      "versionCode": 1,
+      "backgroundColor": "#3DC4AB" 
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/logo.png",
+      "backgroundColor": "#3DC4AB"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/logo.png",
+          "imageWidth": 300,
+          "backgroundColor": "#3DC4AB",
+          "imageStyle": {
+            "borderRadius": 100,
+            "borderWidth": 3,
+            "borderColor": "#FFFFFF",
+            "backgroundColor": "transparent" 
+          }
+        }
+      ],
+      [
+        "expo-system-ui",
+        {
+          "backgroundColor": "#3DC4AB"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
